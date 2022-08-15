@@ -216,13 +216,12 @@ school_map.write_html("Map of CA High Schools.html", include_plotlyjs='cdn')
 
 CA_map_overlay = go.Figure(CA_map)
 CA_map_overlay.add_trace(school_map.data[0])
-CA_map_overlay.
 #CA_map_overlay.update_layout(title_text="Map of CA High Schools with ZTCA Income", title_x=0.40,title_y=.995)
 #CA_map_overlay.write_html("Map of CA High Schools with ZTCA Income.html", include_plotlyjs='cdn')
 CA_map_overlay.show()
 
 
-# In[ ]:
+# In[9]:
 
 
 CA_map_overlay2 = go.Figure(CA_map)
@@ -322,7 +321,7 @@ CA_map_overlay2.show()
 CA_map_overlay2.write_html("Schools as College Prep.html", include_plotlyjs='cdn')
 
 
-# In[ ]:
+# In[10]:
 
 
 # Check to see if all schools are represented.
