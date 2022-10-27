@@ -1,4 +1,4 @@
-# Identifying-Outliers-in-California-HS
+# Identifying Outliers in California High Schools
 
 ## Overview
 This project is designed to take various sources of data on the 2021 cohort of California's high schools and combine them in an user-friendly, easily accessible resource. 
