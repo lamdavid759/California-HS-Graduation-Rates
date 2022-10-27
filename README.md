@@ -7,7 +7,7 @@ The second component of this project is to provide a user-friendly Python module
 screen through the high schools and quickly identify under or overperforming high schools for future case studies. 
 
 ## Data Sources
-Data comes from various sources, as linked in [Links to Data](/Links to Data) and take the form of either demographic information about the graduating cohort, 
+Data comes from various sources, as linked in [Links to Data](/Links%20to%20Data) and take the form of either demographic information about the graduating cohort, 
 class sizes and types, socioeconomic data on the student population as a whole and the surrounding neighborhood, or salaries of teachers and administrators. 
 Metrics that are provided by the CA Department of Education include, but are not limited to, the graduation rate of a specific cohort and the UC/CSU preparation rate (abbreviated
 as the college preparation rate). 
