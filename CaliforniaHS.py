@@ -95,7 +95,7 @@ def plot_schools(metric = "College"):
                 x=alt.value(475),  # pixels from left
                 y=alt.value(450),  # pixels from top
                 text=alt.value(
-                        [f"σ = {sd:.2f}", f"R = {score:.4f}"]
+                        [f"σ = {sd:.2f}", f"R² = {score:.4f}"]
                     ),
                 size=alt.value(16)
             )
@@ -290,7 +290,7 @@ def plot_schools_similar(school, num_neighbors = 5, metric = "College", filters=
                 x=alt.value(475),  # pixels from left
                 y=alt.value(450),  # pixels from top
                 text=alt.value(
-                        [f"σ = {sd:.2f}", f"R = {score:.4f}"]
+                        [f"σ = {sd:.2f}", f"R² = {score:.4f}"]
                     ),
                 size=alt.value(16)
             )
