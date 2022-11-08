@@ -29,7 +29,7 @@ prior to fitting. This ensures that relative feature importances would not be di
  
 ### k-Nearest Neighbors
 To identify which schools are considered similar in profile to each other, a Nearest Neighbors approach is taken. First, the feautures are scaled with a Quartile Scaler prior to
-dimensionality reduction, which is accomplished via Principal Component Analysis. I selected a number of features such that 90% of the explained variance can be captured (with n=22 dimensions 
+dimensionality reduction, which is accomplished via Principal Component Analysis. I selected a number of features such that 90% of the explained variance can be captured (with $n = 22$ dimensions 
 meeting this criteria). 
 Then, the distance between each school is calculated using the Nearest Neighbors algorithm with Eucledian distances, and sorted from shortest to longest distance to identify a list of 
 schools that are similar to a target school. 
@@ -41,8 +41,8 @@ schools analyzed would at least have information on the gender demographics (mal
 
 ## Results
 ### Random Forest Regression Fit Quality
-In the case of college preparation, the double Random Forest Regressor model yields a $R^2$ score of $R^2_{college} == 0.602$, which indicates moderate correlation between the predicted college preparation rates and
-the expected college preparation rates. Outliers were identified as being one standard deviation $$\sigma$$ away from perfect agreement, with $\sigma_{college} = 15.47$. 
+In the case of college preparation, the double Random Forest Regressor model yields a $R^2$ score of $R^2_{college} = 0.602$, which indicates moderate correlation between the predicted college preparation rates and
+the expected college preparation rates. Outliers were identified as being one standard deviation $\sigma$ away from perfect agreement, with $\sigma_{college} = 15.47$. 
 
 A similar analysis could be conducted on graduation rates, with $R^2_{graduation} = 0.370$ and $\sigma_{graduation} = 6.28$. This worse agreement could be due to the relatively higher degree of bunching for graduation rates 
 at higher values. A similar procedure (1 standard deviation) can then be used to identify outliers in overperforming or underperforming schools. 
@@ -50,5 +50,15 @@ at higher values. A similar procedure (1 standard deviation) can then be used to
 ### Comparsion to Other Models
 A Ridge Regression model was also used as comparision. The $R^2$ values for the Ridge Regression were lower when compared to the Random Forest Regressor model, at $R^2_{college} = 0.537$ and $R^2_{graduation} = 0.292$. 
 However, the Ridge model provides not only feature importance, but the positive/negative correlation of a feature, which might make this feature appealing for subsequent analyses despite the worse overall fit. 
+Another concern is that the different models could predict outliers in different directions (i.e., one model could predict an overperforming school but the second model could predict it as underperforming). To check this, 
+the residuals of all schools for both Ridge Regression and Random Forest Regression were plotted on a scatter plot, as seen in 
+![Scatter plot of residuals from linear regression and random forest regression](/Figures/LR_RF_College_residuals.png). Over 80% of the data points fall in the first and third quadrants, indicating that the sign of the residual
+is the same, while the data points that fall in the second and fourth quadrants have relatively low magnitudes, indicating that outliers would not be contraindicated in the two models. 
+
+### Feature Importance
+Because an explanable model is used, we also have insights into the relative importance of the various features used in Random Forest Regression. 
+![Graduation feature importance](/Figures/Graduation_Features.png)
+![College preparation feature importance](/Figures/College_Prep_Features.png)
+
 
 
