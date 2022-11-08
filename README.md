@@ -6,6 +6,8 @@ The bulk of the data wrangling and analysis is done in a Jupyter notebook, with 
 The second component of this project is to provide a user-friendly Python module to visualize the data and predictions. The goal is for an user to be able to rapidly 
 screen through the high schools and quickly identify under or overperforming high schools for future case studies. 
 
+For high-level use, you can download the [CaliforniaHS.py](CaliforniaHS.py) file with the associated .pkl files. For more low-level exploration, download the data located in [Data Files](/Data%20Files) and the [California_HS_Analysis.ipynb](California_HS_Analysis.ipynb) notebook. 
+
 ## Data Sources
 Data comes from various sources, as linked in [Links to Data](/Links%20to%20Data) and take the form of either demographic information about the graduating cohort, 
 class sizes and types, socioeconomic data on the student population as a whole and the surrounding neighborhood, or salaries of teachers and administrators. 
