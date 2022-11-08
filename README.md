@@ -55,7 +55,7 @@ A Ridge Regression model was also used as comparision. The $R^2$ values for the 
 However, the Ridge model provides not only feature importance, but the positive/negative correlation of a feature, which might make this feature appealing for subsequent analyses despite the worse overall fit. 
 Another concern is that the different models could predict outliers in different directions (i.e., one model could predict an overperforming school but the second model could predict it as underperforming). To check this, 
 the residuals of all schools for both Ridge Regression and Random Forest Regression were plotted on a scatter plot, as seen in 
-![Scatter plot of residuals from linear regression and random forest regression](/Figures/LR_RF_College_Residuals.png). 
+![Scatter plot of residuals from linear regression and random forest regression](/Figures/LR_RF_Residuals.png). 
 Over 80% of the data points fall in the first and third quadrants, indicating that the sign of the residual is the same, 
 while the data points that fall in the second and fourth quadrants have relatively low magnitudes, indicating that outliers would not be contraindicated in the two models. 
 
@@ -65,6 +65,7 @@ set and the feature of interest is modified with a range of values prior to usin
 positive/negative effects a feature plays, with red bars indicating a negative effect (as the value of the feature increases, the metric decreases), blue bars indicating a positive effect (feature increases, metric increases), 
 or gray bar (there is not a monotonic relationship between the feature and the metric). 
 ![Graduation feature importance](/Figures/Graduation_Features.png)
+
 The graduation feature importance shows that the largest effect on graduation rates is due to the % of English as a Second Language students, with higher rates resulting in lower graduation rates. Other features that result in 
 lower graduation rates are the % of Disabled Students and % of Socioeconomically Disadvantaged Students. Features that contribute positively to the graduation rate is the average math class size (which is highly correlated with
 the sizes of classes of other subject matters), the % of AP students, 
@@ -72,6 +73,7 @@ the number of students receiving free and reduced lunches, and % of Female Stude
 are more complicated factors at play here. 
 
 ![College preparation feature importance](/Figures/College_Prep_Features.png)
+
 Unexpectedly, the % of AP Students is the number one feature in predicting college preparation rates. Other features of interest that result in higher college preparation rates include the average math class size, whether the 
 school is a charter school, the % of medium class sizes, and the superintendent salary. Meanwhile, the % of smaller math classes, the % of Socioeconomically Disadvantaged Students, the number of students receiving
 free or reduced lunches, and the % of Homeless Students all contribute to lower college preparation rates. The # of students has a nonlinear effect, with extremely small or large cohorts having lower rates for college preparation. 
