@@ -86,8 +86,11 @@ free or reduced lunches, and the % of Homeless Students all contribute to lower 
 ### Visualizations
 
 As part of this project, a Python module ([CaliforniaHS.py](CaliforniaHS.py)) was created to generate interactive figures. 
-The first type of figure plots the predicted metric versus the actual 2021-2022 metric: [College Preparation Visualization](https://lamdavid759.github.io/College_Prep_Predictions.html)
+
+The first type of figure plots the predicted metric versus the actual 2021-2022 metric. An example of this is shown for college preparation rates: [College Preparation Visualization](https://lamdavid759.github.io/College_Prep_Predictions.html)
+
 The second type of figure takes in additional features about a target school and the number of similar schools to plot, with optional filters on the desired county, charter status, or magnet status. An example for Montebello High's 15 most similar comparisons in Los Angeles County can be found here: [Montebello High Nearest Neighbors](https://lamdavid759.github.io/Montebello_High_NN.html)
+
 ## Conclusions
 This project has resulted in the following: 
 1) A cleaned and merged dataset from the California Department of Education School Accountability Report Card, augmented with additional features from other sources, that is readily available in the form of a pandas DataFrame. 
