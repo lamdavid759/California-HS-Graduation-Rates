@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https)://mybinder.org/v2/gh/lamdavid759/Identifying-Outliers-in-California-High-Schools/main)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/lamdavid759/Identifying-Outliers-in-California-High-Schools/main)
 
 # Identifying Outliers in California High Schools
 
