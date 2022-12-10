@@ -4,40 +4,39 @@
 #
 #    pip-compile requirements.in
 #
-altair==4.2.0
+altair
     # via -r requirements.in
-attrs==22.1.0
+attrs
     # via jsonschema
-contourpy==1.0.6
+contourpy
     # via matplotlib
-cycler==0.11.0
+cycler
     # via matplotlib
-ediblepickle==1.1.3
+ediblepickle
     # via -r requirements.in
-entrypoints==0.4
+entrypoints
     # via altair
-fonttools==4.38.0
+fonttools
     # via matplotlib
-geographiclib==2.0
+geographiclib
     # via geopy
-geopy==2.3.0
+geopy
     # via -r requirements.in
-importlib-resources==5.10.1
+importlib-resources
     # via jsonschema
-jinja2==3.1.2
+jinja2
     # via altair
-joblib==1.2.0
+joblib
     # via scikit-learn
-jsonschema==4.17.3
+jsonschema
     # via altair
-kiwisolver==1.4.4
+kiwisolver
     # via matplotlib
-markupsafe==2.1.1
+markupsafe
     # via jinja2
-matplotlib==3.5.2
+matplotlib
     # via seaborn
-    # Edited to satisify binder requirements. 
-numpy==1.23.5
+numpy
     # via
     #   altair
     #   contourpy
@@ -46,38 +45,38 @@ numpy==1.23.5
     #   scikit-learn
     #   scipy
     #   seaborn
-packaging==22.0
+packaging
     # via matplotlib
-pandas==1.5.2
+pandas
     # via
     #   -r requirements.in
     #   altair
     #   seaborn
-pillow==9.3.0
+pillow
     # via matplotlib
-pkgutil-resolve-name==1.3.10
+pkgutil-resolve-name
     # via jsonschema
-pyparsing==3.0.9
+pyparsing
     # via matplotlib
-pyrsistent==0.19.2
+pyrsistent
     # via jsonschema
-python-dateutil==2.8.2
+python-dateutil
     # via
     #   matplotlib
     #   pandas
-pytz==2022.6
+pytz
     # via pandas
-scikit-learn==1.2.0
+scikit-learn
     # via -r requirements.in
-scipy==1.9.3
+scipy
     # via scikit-learn
-seaborn==0.12.1
+seaborn
     # via -r requirements.in
-six==1.16.0
+six
     # via python-dateutil
-threadpoolctl==3.1.0
+threadpoolctl
     # via scikit-learn
-toolz==0.12.0
+toolz
     # via altair
-zipp==3.11.0
+zipp
     # via importlib-resources
