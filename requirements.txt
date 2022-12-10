@@ -34,9 +34,8 @@ kiwisolver==1.4.4
     # via matplotlib
 markupsafe==2.1.1
     # via jinja2
-matplotlib==3.5.2
+matplotlib==3.6.2
     # via seaborn
-    # Edited to satisify binder requirements. 
 numpy==1.23.5
     # via
     #   altair
